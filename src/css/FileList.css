@@ -1,0 +1,41 @@
+.file-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-count {
+  display: grid;
+  color: rgb(246, 242, 242);
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex: 1;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  max-height: 90vh;
+  padding: auto;
+  overflow-y: auto;
+}
+
+.grid-item {
+  display: flex;
+  font-family: "Harrington";
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: #333231;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.grid-item:hover {
+  background-color: rgb(215, 207, 207);
+  color: rgb(29, 20, 20);
+}

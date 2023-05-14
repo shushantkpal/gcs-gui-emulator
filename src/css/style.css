@@ -1,0 +1,7 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(70, 73, 74, 0.9);
+}

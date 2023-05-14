@@ -1,0 +1,27 @@
+.two-column-layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-column {
+  width: 20%;
+  height: 100%;
+  padding: 20px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 30px;
+  opacity: 100%;
+  padding: 20px
+}
+
+.right-column {
+  width: 80%;
+  float: left;
+  height: 100%;
+  padding: 20px;
+
+}
+
+.column {
+  padding: 10px;
+}
