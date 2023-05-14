@@ -48,3 +48,6 @@ networks:
       apiEndpoint: apiEndpoint
     }).createBucket(uploadBucketName);
  ````
+ 
+ <img width="799" alt="image" src="https://github.com/shushantkpal/gcs-gui-emulator/assets/58916316/2bcf0afb-65e6-432e-a3ff-83dfcb9c077e">
+
