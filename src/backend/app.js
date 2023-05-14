@@ -13,12 +13,10 @@ app.use((req, res, next) => {
 
 app.get('/fetchFiles/:bucketname', async (req, res) => {
   await gcpStorage.getFileListsfromGCP(req, res);
-  console.log("ended")
 });
 
 app.get('/getBucketList', async (req, res) => {
   await gcpStorage.getBucketList(req, res);
-  console.log("ended")
 });
 
 const port = process.env.PORT || 3002
