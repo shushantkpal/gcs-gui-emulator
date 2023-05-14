@@ -40,7 +40,7 @@ networks:
     driver: bridge
 ````
 
- # creating Bucket In Google Cloud Emultor (Node js)
+ # creating Bucket In Google Cloud Emulator (Node js)
  
  ````
   const storage = new Storage({
