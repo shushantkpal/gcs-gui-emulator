@@ -8,7 +8,8 @@ function BucketList({ onSelect }) {
   async function ftechBucket() {
 
     let data = [];
-    const responses = await fetch(`http://localhost:3002/getBucketList`);
+    const URI = `http://localhost:${process.env.NODE_PORT || 3002}/getBucketList`
+    const responses = await fetch(URI);
     const fileValue = await responses.json();
     for (let response of fileValue) {
       data.push(response.bucketname)

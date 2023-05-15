@@ -5,9 +5,10 @@
 }
 
 .file-count {
+  margin-top: 1%;
   display: grid;
   color: rgb(246, 242, 242);
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Roboto";
 }
 
 .grid-container {

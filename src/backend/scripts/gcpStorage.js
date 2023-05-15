@@ -2,7 +2,7 @@
 const { Storage } = require('@google-cloud/storage');
 
 const apiEndpoint = process.env.API_ENDPOINT || "http://localhost:8080";
-const projectId = process.env.PROJECT_ID || 'someDummyValue';
+const projectId = process.env.PROJECT_ID || 'dummy_project-id';
 
 const storageCon = new Storage({
   projectId: projectId,
@@ -13,7 +13,6 @@ async function getFileListsfromGCP(req, res) {
   try {
 
     const bucketName = req.params.bucketname
-    console.log(bucketName)
     const allbucketss = await storageCon.getBuckets();
 
     allbucketss.forEach(e => {
@@ -42,7 +41,6 @@ async function getBucketList(req, res) {
         id: bucket.id,
         baseUrl: bucket.baseUrl
       }))
-
       res.send(bucketsDetail)
     }
   }

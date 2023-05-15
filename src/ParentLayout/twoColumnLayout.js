@@ -23,7 +23,6 @@ function TwoColumnLayout() {
 
       </div>
       <div className="right-column column">
-        <h2>File List</h2>
         {selectedFile && <FileList inputString={selectedFile} />}
       </div>
     </div>

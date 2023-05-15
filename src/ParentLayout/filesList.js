@@ -3,7 +3,8 @@ import '../css/FileList.css';
 function FileList(props) {
   const [files, setFiles] = useState([]);
   async function fetchFiles(inputString) {
-    const responses = await fetch(`http://localhost:3002/fetchFiles/${props.inputString}`);
+    const URI = `http://localhost:${process.env.NODE_PORT || 3002}/fetchFiles/${props.inputString}`
+    const responses = await fetch(URI);
 
     const fileValue = await responses.json();
     const data = [];
