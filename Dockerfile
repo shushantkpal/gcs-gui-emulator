@@ -1,5 +1,6 @@
 # Use the official Node.js image as the base image
 FROM node:14-alpine
+LABEL org.opencontainers.image.source="https://github.com/shushantkpal/gcs-gui-emulator"
 
 # Set the working directory inside the container
 WORKDIR /app
